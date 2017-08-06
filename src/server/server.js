@@ -301,7 +301,7 @@ io.on('connection', function (socket) {
                 player.hue = 310;
             } else if(player.name.toLowerCase().startsWith("fuque gta")){
                 player.hue = 310;
-            mass: 100
+           
             }
             currentPlayer = player;
             currentPlayer.lastHeartbeat = new Date().getTime();
