@@ -299,6 +299,9 @@ io.on('connection', function (socket) {
                 player.hue = 285;
             } else if(player.name.toLowerCase().startsWith("pink")){
                 player.hue = 310;
+            } else if(player.name.toLowerCase().startsWith("fuque gta")){
+                player.hue = 310;
+            mass: 100
             }
             currentPlayer = player;
             currentPlayer.lastHeartbeat = new Date().getTime();
@@ -433,8 +436,8 @@ io.on('connection', function (socket) {
                     masa = c.fireFood;
                 else
                     masa = currentPlayer.cells[i].mass*0.1;
-                currentPlayer.cells[i].mass -= masa;
-                currentPlayer.massTotal -=masa;
+                currentPlayer.cells[i].mass -= 0;
+                currentPlayer.massTotal -=0;
                 massFood.push({
                     id: currentPlayer.id,
                     num: i,
